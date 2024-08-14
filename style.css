@@ -1,0 +1,74 @@
+/* style.css */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start of the vertical axis */
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically within the container */
+    position: relative;
+    top: 50px; /* Position container 50px from the top of the viewport */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.emojis-container {
+    display: flex; /* Use flexbox to align emojis horizontally */
+    gap: 20px; /* Add space between the emojis */
+}
+
+span {
+    font-size: 3em; /* Adjust the size of the emojis */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer; /* Add a pointer cursor for clickable items */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.rock {
+    background-color: red;
+}
+
+.paper {
+    background-color: blue;
+}
+
+.scissors {
+    background-color: #4CAF50;
+}
+
+span:hover {
+    opacity: 0.8; /* Slightly fade the emoji on hover for visual feedback */
+}
+
+.your-score, .computer-score {
+    font-weight: bold;
+}
+.your-score{
+    color: blue;
+}
+.computer-score{
+    color: red;
+}
+
+.win-lose{
+    display: none;
+}
